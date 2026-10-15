@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abinaya Sriram — Portfolio</title>
+<meta name="description" content="Data Engineer Analyst at BlackRock (Aladdin). CSE (AI) graduate, Manipal Institute of Technology. Deep learning, computer vision, and big-data projects, all verified running.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-name">Abinaya Sriram</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" data-nav="about">About</a>
+        <a href="#experience" data-nav="experience">Experience</a>
+        <a href="#skills" data-nav="skills">Skills</a>
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#demos" data-nav="demos">Live demos</a>
+        <a href="#results" data-nav="results">Results</a>
+        <a href="#beyond" data-nav="beyond">Recognition</a>
+        <a href="#outside" data-nav="outside">Outside work</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero wrap reveal" id="top">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="dot"></span><span id="role-text">Data Engineer Analyst @ BlackRock</span></div>
+        <h1>I build things that <span class="accent">have to work</span> — and a few just because I wanted to see if I could.</h1>
+        <p class="hero-sub">At BlackRock, that means pipelines and APIs for Aladdin that can't afford to go down. CSE (AI) graduate, Manipal Institute of Technology.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">More about me ↓</a>
+          <a class="btn btn-ghost" href="https://github.com/abinaya25138" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/abinaya-sriram-14b4041b9" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="assets/photo.jpg" alt="Abinaya Sriram">
+        <div class="hero-photo-caption"><span class="dot"></span>Mumbai, India</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="stats" class="stats-bar wrap reveal">
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num" id="stat-projects">0</div><div class="stat-label">Projects shipped</div></div>
+      <div class="stat"><div class="stat-num"><span id="stat-accuracy">0.0</span>%</div><div class="stat-label">Best model accuracy</div></div>
+      <div class="stat"><div class="stat-num"><span id="stat-clients">0</span>+</div><div class="stat-label">Clients served in production</div></div>
+      <div class="stat"><div class="stat-num" id="stat-years">0</div><div class="stat-label">Years of Bharatanatyam</div></div>
+    </div>
+  </section>
+
+  <section id="journey" class="wrap reveal" style="padding:60px 0 40px;">
+    <div class="journey-intro">// a map of this page, in case you want one</div>
+    <div class="journey-map">
+      <svg class="journey-path" viewBox="0 0 1000 240" preserveAspectRatio="none">
+        <path d="M30,170 C90,120 140,80 200,85 C280,92 320,180 380,185 C440,190 500,90 560,70 C630,48 690,160 740,175 C800,188 880,80 940,55"
+              fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10" vector-effect="non-scaling-stroke"/>
+        <path d="M940,55 L958,42 L954,64 Z" fill="var(--accent)"/>
+        <circle cx="30" cy="170" r="9" fill="var(--accent)" stroke="#fff" stroke-width="3"/>
+        <circle cx="200" cy="85" r="7" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
+        <circle cx="380" cy="185" r="7" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
+        <circle cx="560" cy="70" r="7" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
+        <circle cx="740" cy="175" r="7" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
+      </svg>
+      <div class="journey-start-label" style="left:3%; top:65%;">start</div>
+      <a href="#about" class="journey-stop" style="left:20%; top:35.5%;">
+        <span class="journey-pill c1">About</span>
+        <span class="journey-caption">the bigger picture</span>
+      </a>
+      <a href="#experience" class="journey-stop" style="left:38%; top:77%;">
+        <span class="journey-pill c2">Work</span>
+        <span class="journey-caption">what I build and why</span>
+      </a>
+      <a href="#projects" class="journey-stop" style="left:56%; top:29%;">
+        <span class="journey-pill c1">Projects</span>
+        <span class="journey-caption">ideas into real things</span>
+      </a>
+      <a href="#outside" class="journey-stop" style="left:74%; top:73%;">
+        <span class="journey-pill c2">Outside work</span>
+        <span class="journey-caption">who I am off the clock</span>
+      </a>
+      <a href="#contact" class="journey-end" style="left:94%; top:16%;">say hi →</a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="about" class="wrap reveal">
+    <div class="about-grid">
+      <div>
+        <span class="section-kicker">01 — About</span>
+        <h2 style="margin-bottom:22px;">A little about me</h2>
+        <p>I've spent the last few years moving between two things that don't usually share a sentence: production infrastructure and Bharatanatyam. I build data pipelines and APIs at BlackRock that have to hold up across 200+ enterprise clients — and I've trained and performed classical Indian dance for 14 years. Both taught me the same lesson, honestly: the unglamorous, repetitive part is where the skill lives.</p>
+        <p>That's probably why my favorite project isn't the one with the best accuracy number — it's the one where I had no dataset at all. At Intel, I wanted to generate Indian classical music with a model, and nothing like that existed, so I recorded and converted audio into a 343KB MIDI dataset myself before I could even start training GPT-2 on it. I'd rather build the thing that doesn't exist yet than fine-tune the thing that does.</p>
+        <p>I also co-authored a paper on video recommendation for fashion (accepted at RCAAI 2024) and ran IEEE-CIS as General Secretary — more on that, and on what I do when I'm not working, a couple of sections down.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="fact-label">ROLE</span><span class="fact-value">Data Engineer Analyst<br>BlackRock (Aladdin), Mumbai</span></div>
+        <div class="fact"><span class="fact-label">EDUCATION</span><span class="fact-value">B.Tech CSE (AI)<br>Manipal Institute of Technology</span></div>
+        <div class="fact"><span class="fact-label">PAPER</span><span class="fact-value">Accepted, RCAAI 2024 — SIDVR<br>video recommendation for fashion</span></div>
+        <div class="fact"><span class="fact-label">AWARD</span><span class="fact-value">2nd Runner-Up<br>Academia-Industry Conclave Hackathon</span></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="experience" class="wrap reveal">
+    <div class="section-head">
+      <span class="section-kicker">02 — Experience</span>
+      <h2>What I've worked on</h2>
+    </div>
+
+    <div class="tl-entry featured">
+      <span class="tl-featured-tag">CURRENT</span>
+      <div class="tl-role">Analyst — Data Engineer</div>
+      <div class="tl-org">BlackRock (Aladdin) · Mumbai · Jan 2025 – Present</div>
+      <div class="tl-bullets">
+        <p>Built and deployed 5+ production APIs (SFTP file listing, Vault secrets synced with Kubernetes, Azure DevOps PR approvals, multi-database connectivity) powering onboarding and access management across 200+ clients on Aladdin, BlackRock's investment management data platform.</p>
+        <p>Automated client onboarding using a fine-tuned open-source model on BlackRock's internal AI agent platform, replacing manual provisioning of storage, service accounts, and platform access at scale.</p>
+        <div class="tl-extra hidden" id="tl-extra">
+          <p>Diagnosed a silent data-integrity gap — a health check reported a successful database connection while an Airflow ingestion task quietly failed — and closed it, strengthening trust in a pipeline feeding downstream analytics at enterprise scale.</p>
+          <p>Implemented OpenTelemetry custom metrics and Prometheus/Grafana alerting for Airflow and Argo, giving engineering teams real-time visibility into pipeline health.</p>
+          <p>Engineered Go/Bento application servers and end-to-end reconciliation pipelines safeguarding data integrity across Aladdin's acquisition data flow, preventing silent data loss before it reached downstream analytics.</p>
+        </div>
+      </div>
+      <button class="tl-more-btn" id="tl-more-btn">Show 3 more →</button>
+    </div>
+
+    <div class="tl-entry featured">
+      <span class="tl-featured-tag">PERSONAL FAVORITE</span>
+      <div class="tl-role">GenAI Project Intern</div>
+      <div class="tl-org">Intel Corporation · Bengaluru · May – Jul 2024</div>
+      <div class="tl-bullets">
+        <p>Built a generative AI system for Indian classical music. No dataset existed for this niche domain, so I collected audio recordings myself and converted them into a custom 343KB MIDI dataset from scratch.</p>
+        <p>Trained a GPT-2 model on the self-built dataset using pretty_midi, librosa, and custom tokenization to generate musical sequences.</p>
+      </div>
+    </div>
+
+    <div class="tl-compact-row">
+      <div class="tl-compact">
+        <div class="tl-role">Prompt Engineer</div>
+        <div class="tl-org">SoulAI · Remote, Delaware · Mar – May 2024</div>
+        <p>Fine-tuned LLMs through prompt engineering and reinforcement learning to improve task adaptability and output quality.</p>
+      </div>
+      <div class="tl-compact">
+        <div class="tl-role">Salesforce Intern</div>
+        <div class="tl-org">Teqfocus · Bengaluru · May – Jul 2024</div>
+        <p>Automated business processes and improved platform efficiency using Salesforce APEX and declarative tooling.</p>
+      </div>
+      <div class="tl-compact">
+        <div class="tl-role">Software Intern</div>
+        <div class="tl-org">ExactSpace Technologies · Bengaluru · Jan – Mar 2023</div>
+        <p>Built Python/Flask REST APIs handling 100+ requests/min; implemented fuzzy string matching and search optimization with Whoosh — the real origin of the fuzzy-tag-search project below.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="skills" class="wrap reveal">
+    <div class="section-head">
+      <span class="section-kicker">03 — Skills</span>
+      <h2>Tools I've shipped projects with</h2>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h4>Infrastructure & DevOps</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Argo CD</span>
+          <span class="skill-tag">Vault</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">Grafana / Prometheus</span>
+          <span class="skill-tag">Komodor</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">APEX</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>ML & Data</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">TensorFlow / Keras</span>
+          <span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">SHAP</span>
+          <span class="skill-tag">PySpark</span>
+          <span class="skill-tag">pandas / NumPy</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>CV & NLP</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">NLTK</span>
+          <span class="skill-tag">TF-IDF</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">librosa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="projects" class="wrap reveal">
+    <div class="section-head">
+      <span class="section-kicker">04 — Projects</span>
+      <h2>Eight projects</h2>
+      <p>Click through to the code — every README documents what I found building it, bugs and all.</p>
+    </div>
+    <div class="filter-row" id="filter-row">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="Computer Vision">Computer Vision</button>
+      <button class="filter-btn" data-filter="Data & ML">Data & ML</button>
+      <button class="filter-btn" data-filter="NLP & Search">NLP & Search</button>
+    </div>
+    <div class="project-grid" id="project-grid">
+
+      <a class="project-card" data-category="Data & ML" href="https://github.com/abinaya25138/cervical-cancer-prediction" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">Data & ML</span>
+          <span class="project-metric">86% acc · AUC 0.66</span>
+        </div>
+        <h3 class="project-title">Cervical Cancer Risk Prediction</h3>
+        <p class="project-desc">XGBoost vs. DNN on real patient data, 3-reader majority-vote ground truth, SHAP interpretability.</p>
+        <div class="project-tech-pills"><span class="tech-pill">XGBoost</span><span class="tech-pill">TensorFlow</span><span class="tech-pill">SHAP</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+      <a class="project-card" data-category="Computer Vision" href="https://github.com/abinaya25138/rice-classification-vgg16" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">Computer Vision</span>
+          <span class="project-metric">98.2% test acc</span>
+        </div>
+        <h3 class="project-title">Rice Classification — VGG16</h3>
+        <p class="project-desc">Transfer learning for rice grain variety classification across 5 classes.</p>
+        <div class="project-tech-pills"><span class="tech-pill">TensorFlow</span><span class="tech-pill">VGG16</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+      <a class="project-card" data-category="Computer Vision" href="https://github.com/abinaya25138/food-classification-efficientnet-mobilenet" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">Computer Vision</span>
+          <span class="project-metric muted">Architecture ready</span>
+        </div>
+        <h3 class="project-title">Food Classification</h3>
+        <p class="project-desc">Fair head-to-head of EfficientNetB0 vs. MobileNet on Food-101 — accuracy, time, and params compared.</p>
+        <div class="project-tech-pills"><span class="tech-pill">TensorFlow</span><span class="tech-pill">EfficientNet</span><span class="tech-pill">MobileNet</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+      <a class="project-card" data-category="Data & ML" href="https://github.com/abinaya25138/ml-algorithms-from-scratch" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">Data & ML</span>
+          <span class="project-metric">96.5% acc (SVM)</span>
+        </div>
+        <h3 class="project-title">ML Algorithms from Scratch</h3>
+        <p class="project-desc">SVM, KNN, and Decision Trees implemented and compared across classification and regression tasks.</p>
+        <div class="project-tech-pills"><span class="tech-pill">scikit-learn</span><span class="tech-pill">Python</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+      <a class="project-card" data-category="Data & ML" href="https://github.com/abinaya25138/taxi-trip-analysis-pyspark" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">Data & ML</span>
+          <span class="project-metric">100K rows · 5 clusters</span>
+        </div>
+        <h3 class="project-title">Taxi Trip Analysis — PySpark</h3>
+        <p class="project-desc">Big-data ride analysis: dimensional modeling, feature engineering, regression, and hotspot clustering.</p>
+        <div class="project-tech-pills"><span class="tech-pill">PySpark</span><span class="tech-pill">MLlib</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+      <a class="project-card" data-category="Computer Vision" href="https://github.com/abinaya25138/ComputerVision" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">Computer Vision</span>
+          <span class="project-metric">10 techniques</span>
+        </div>
+        <h3 class="project-title">Computer Vision with OpenCV</h3>
+        <p class="project-desc">10 classic CV techniques — face/car detection, SIFT matching, optical-flow tracking, camera calibration.</p>
+        <div class="project-tech-pills"><span class="tech-pill">OpenCV</span><span class="tech-pill">Python</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+      <a class="project-card" data-category="NLP & Search" href="https://github.com/abinaya25138/nltk-retrieval-chatbot" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">NLP & Search</span>
+          <span class="project-metric muted">Try it live below ↓</span>
+        </div>
+        <h3 class="project-title">NLTK Retrieval Chatbot</h3>
+        <p class="project-desc">TF-IDF/cosine-similarity chatbot with greeting detection, typo correction, and NER.</p>
+        <div class="project-tech-pills"><span class="tech-pill">NLTK</span><span class="tech-pill">scikit-learn</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+      <a class="project-card" data-category="NLP & Search" href="https://github.com/abinaya25138/fuzzy-tag-search" target="_blank" rel="noopener">
+        <div class="project-card-head">
+          <span class="project-category">NLP & Search</span>
+          <span class="project-metric muted">Try it live below ↓</span>
+        </div>
+        <h3 class="project-title">Fuzzy Tag Search</h3>
+        <p class="project-desc">Three microservices comparing Jaccard similarity, Levenshtein distance, and full-text search.</p>
+        <div class="project-tech-pills"><span class="tech-pill">Flask</span><span class="tech-pill">Python</span></div>
+        <div class="project-arrow">View repo →</div>
+      </a>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="demos" class="wrap reveal">
+    <div class="section-head">
+      <span class="section-kicker">05 — Live demos</span>
+      <h2>Two of these, running right here</h2>
+      <p>Most ML demos on portfolio sites are screenshots. These two use the same retrieval logic from my repos, reimplemented in plain JavaScript so they run live in your browser.</p>
+    </div>
+
+    <div class="demo-panel" style="margin-bottom:24px;">
+      <div>
+        <div class="demo-label"><span class="live-pill"></span>Live — NLTK Retrieval Chatbot</div>
+        <h3>Ask it something</h3>
+        <p>Same approach as the real repo: tokenize your message, score it against a small corpus by word overlap, return the closest match. Try "hi", or ask about TF-IDF, tokenization, or chatbots.</p>
+      </div>
+      <div>
+        <div class="chat-window" id="chat-window">
+          <div class="chat-msg bot">Hi! I'm a tiny retrieval chatbot — ask me about NLP, TF-IDF, tokenization, or chatbots.</div>
+        </div>
+        <div class="chat-input-row">
+          <input class="chat-input" id="chat-input" placeholder="Ask about NLP, TF-IDF, chatbots…">
+          <button class="chat-send" id="chat-send">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-panel">
+      <div>
+        <div class="demo-label"><span class="live-pill"></span>Live — Fuzzy Tag Search</div>
+        <h3>Jaccard similarity, in real time</h3>
+        <p>From the fuzzy-tag-search repo: character-set Jaccard similarity between your query and each sample tag, re-ranked on every keystroke. Try "motor temp" or "pump pressure".</p>
+      </div>
+      <div>
+        <input class="search-input" id="search-input" placeholder="Search equipment tags…">
+        <div class="search-results" id="search-results"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="results" class="wrap reveal">
+    <div class="section-head">
+      <span class="section-kicker">06 — Real results</span>
+      <h2>Numbers, straight from the training logs</h2>
+      <p>Hand-drawn from the training runs and SHAP output.</p>
+    </div>
+
+    <div class="results-grid">
+      <div class="result-card wide">
+        <h4>Rice classifier (VGG16) — training curve</h4>
+        <div class="result-sub">750-image verification subset, 6 epochs → 98.2% held-out test accuracy</div>
+        <svg viewBox="0 0 700 220" style="width:100%; height:auto;">
+          <line x1="50" y1="20" x2="50" y2="200" stroke="#E8CBD5" stroke-width="1"/>
+          <line x1="50" y1="200" x2="680" y2="200" stroke="#E8CBD5" stroke-width="1"/>
+          <text x="20" y="25" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">1.0</text>
+          <text x="20" y="115" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">0.75</text>
+          <text x="20" y="205" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">0.5</text>
+          <line x1="50" y1="20" x2="680" y2="20" stroke="#F3E3E8" stroke-width="1" stroke-dasharray="3,4"/>
+          <line x1="50" y1="110" x2="680" y2="110" stroke="#F3E3E8" stroke-width="1" stroke-dasharray="3,4"/>
+          <path d="M60,173.6 180,39.2 300,31.0 420,28.9 540,22.1 660,25.5 L660,200 L60,200 Z" fill="#B8456C" opacity="0.08"/>
+          <polyline points="60,173.6 180,39.2 300,31.0 420,28.9 540,22.1 660,25.5" fill="none" stroke="#B8456C" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <polyline points="60,51.9 180,26.4 300,35.9 420,23.2 540,32.7 660,26.4" fill="none" stroke="#8C6B99" stroke-width="2.5"/>
+          <g fill="#B8456C"><circle cx="60" cy="173.6" r="3.5"/><circle cx="180" cy="39.2" r="3.5"/><circle cx="300" cy="31.0" r="3.5"/><circle cx="420" cy="28.9" r="3.5"/><circle cx="540" cy="22.1" r="3.5"/><circle cx="660" cy="25.5" r="3.5"/></g>
+          <g fill="#8C6B99"><circle cx="60" cy="51.9" r="3.5"/><circle cx="180" cy="26.4" r="3.5"/><circle cx="300" cy="35.9" r="3.5"/><circle cx="420" cy="23.2" r="3.5"/><circle cx="540" cy="32.7" r="3.5"/><circle cx="660" cy="26.4" r="3.5"/></g>
+          <text x="55" y="215" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">E1</text>
+          <text x="175" y="215" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">E2</text>
+          <text x="295" y="215" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">E3</text>
+          <text x="415" y="215" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">E4</text>
+          <text x="535" y="215" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">E5</text>
+          <text x="650" y="215" fill="#9C8B94" font-size="11" font-family="IBM Plex Mono">E6</text>
+        </svg>
+        <div class="legend">
+          <div class="legend-item"><span class="legend-swatch" style="background:#B8456C;"></span>Train accuracy</div>
+          <div class="legend-item"><span class="legend-swatch" style="background:#8C6B99;"></span>Validation accuracy</div>
+        </div>
+      </div>
+
+      <div class="result-card">
+        <h4>Cervical cancer — SHAP feature importance</h4>
+        <div class="result-sub">XGBoost, mean |SHAP value| on held-out test set</div>
+        <svg viewBox="0 0 460 190" style="width:100%; height:auto;">
+          <rect x="0" y="6" width="400" height="22" rx="4" fill="#B8456C"/>
+          <text x="0" y="0" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Hormonal Contraceptives (yrs)</text>
+          <rect x="0" y="43" width="347" height="22" rx="4" fill="#B8456C" opacity="0.85"/>
+          <text x="0" y="37" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Num. of pregnancies</text>
+          <rect x="0" y="80" width="344" height="22" rx="4" fill="#B8456C" opacity="0.72"/>
+          <text x="0" y="74" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">First sexual intercourse (age)</text>
+          <rect x="0" y="117" width="311" height="22" rx="4" fill="#B8456C" opacity="0.6"/>
+          <text x="0" y="111" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Age</text>
+          <rect x="0" y="154" width="217" height="22" rx="4" fill="#B8456C" opacity="0.45"/>
+          <text x="0" y="148" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Number of sexual partners</text>
+        </svg>
+      </div>
+
+      <div class="result-card">
+        <h4>Taxi pickup hotspots (PySpark)</h4>
+        <div class="result-sub">KMeans, k=5, real cluster centers on 100K NYC trips</div>
+        <svg viewBox="0 0 500 300" style="width:100%; height:auto;">
+          <rect x="0" y="0" width="500" height="300" rx="8" fill="#FFF8FA" stroke="#F0D3DD"/>
+          <g stroke="#F3E3E8" stroke-width="1">
+            <line x1="0" y1="75" x2="500" y2="75"/><line x1="0" y1="150" x2="500" y2="150"/><line x1="0" y1="225" x2="500" y2="225"/>
+            <line x1="125" y1="0" x2="125" y2="300"/><line x1="250" y1="0" x2="250" y2="300"/><line x1="375" y1="0" x2="375" y2="300"/>
+          </g>
+          <g fill="#B8456C" opacity="0.15">
+            <circle cx="51.7" cy="127.4" r="18"/><circle cx="428.9" cy="248.5" r="18"/><circle cx="117.2" cy="40.9" r="18"/><circle cx="76.6" cy="79.7" r="18"/><circle cx="262.8" cy="62.7" r="18"/>
+          </g>
+          <g fill="#B8456C" stroke="#FFF8FA" stroke-width="2">
+            <circle cx="51.7" cy="127.4" r="8"/>
+            <circle cx="428.9" cy="248.5" r="8"/>
+            <circle cx="117.2" cy="40.9" r="8"/>
+            <circle cx="76.6" cy="79.7" r="8"/>
+            <circle cx="262.8" cy="62.7" r="8"/>
+          </g>
+          <g fill="#9C8B94" font-size="10" font-family="IBM Plex Mono">
+            <text x="60" y="120">Midtown</text>
+            <text x="360" y="242">JFK area</text>
+            <text x="126" y="34">Upper Manhattan</text>
+            <text x="84" y="100">Downtown</text>
+            <text x="270" y="56">Queens</text>
+          </g>
+        </svg>
+        <div class="result-sub" style="margin-top:10px;">Train/test split: 80,217 / 19,783 rows</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="beyond" class="wrap reveal">
+    <div class="section-head">
+      <span class="section-kicker">07 — Leadership & recognition</span>
+      <h2>Research and leadership, briefly</h2>
+    </div>
+    <div class="beyond-grid">
+      <div class="beyond-card">
+        <div class="beyond-icon">P</div>
+        <h4>Accepted Paper</h4>
+        <div class="beyond-org">RCAAI 2024 · with MNIT Jaipur</div>
+        <p>Co-authored "SIDVR: Semantic Intelligence Driven Video Recommendation Algorithm for Fashion," accepted at Manipal Institute of Technology's RCAAI 2024.</p>
+      </div>
+      <div class="beyond-card">
+        <div class="beyond-icon">A</div>
+        <h4>Hackathon Award</h4>
+        <div class="beyond-org">Academia-Industry Conclave 1.0</div>
+        <p>2nd Runner-Up for a crash detection and emergency alert Android application.</p>
+      </div>
+      <div class="beyond-card">
+        <div class="beyond-icon">L</div>
+        <h4>IEEE-CIS</h4>
+        <div class="beyond-org">General Secretary</div>
+        <p>Ran operations for the IEEE Computational Intelligence Society student chapter.</p>
+      </div>
+      <div class="beyond-card">
+        <div class="beyond-icon">C</div>
+        <h4>Codex Coding Club</h4>
+        <div class="beyond-org">PR Coordinator</div>
+        <p>Handled outreach and public relations for the college coding club.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="outside" class="wrap reveal">
+    <div class="section-head">
+      <span class="section-kicker">08 — Outside of work</span>
+      <h2>The part that doesn't show up in a repo</h2>
+    </div>
+    <div class="outside-grid">
+      <div class="outside-quote">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">Always up for a good time, talks a little too much when excited, and somehow manages to overthink everything while being a happy little ball of chaos.</p>
+        <div class="quote-attrib">— what my friends would say, probably</div>
+      </div>
+      <div class="outside-list">
+        <div class="outside-item">
+          <h4>Bharatanatyam</h4>
+          <p>Training and performing since I was 6 — 14 years in. General Secretary & Head Choreographer, Cina Dance and Music Club.</p>
+        </div>
+        <div class="outside-item">
+          <h4>Weekends</h4>
+          <p>Planning the next trip, finding a new place to eat and then ordering the same thing I always do, or three hours into a rabbit hole I didn't mean to start.</p>
+        </div>
+        <div class="outside-item">
+          <h4>Decision-making</h4>
+          <p>I'll turn a two-minute choice into a full investigation — compare every option, ask everyone for advice — then do exactly what I wanted to in the first place.</p>
+        </div>
+        <div class="outside-item">
+          <h4>Giving back</h4>
+          <p>Volunteer tutor with Parikrma Foundation and BlackRock's community program, running interactive learning activities for kids.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <footer id="contact" class="wrap reveal">
+    <div class="footer-top">
+      <h2>Let's talk about AI, ML, or wherever you think I should eat next.</h2>
+      <div class="footer-links">
+        <a class="btn btn-primary" href="mailto:abinayasriram0601@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/abinaya-sriram-14b4041b9" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/abinaya25138" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Abinaya Sriram — Data Engineer Analyst @ BlackRock</span>
+      <span>Mumbai, India</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
