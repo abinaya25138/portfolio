@@ -14,6 +14,26 @@ setInterval(() => {
 }, 2600);
 
 // ---------------------------------------------------------------------------
+// Mobile nav toggle
+// ---------------------------------------------------------------------------
+const navToggle = document.getElementById('nav-toggle');
+const navLinksEl = document.getElementById('nav-links');
+if (navToggle && navLinksEl) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinksEl.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navLinksEl.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      navLinksEl.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
+// ---------------------------------------------------------------------------
 // Reveal-on-scroll + active nav section, via one IntersectionObserver
 // ---------------------------------------------------------------------------
 const SECTION_IDS = ['top', 'stats', 'journey', 'about', 'experience', 'skills', 'projects', 'demos', 'results', 'beyond', 'outside', 'contact'];
