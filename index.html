@@ -252,7 +252,7 @@
   <section id="projects" class="wrap reveal">
     <div class="section-head">
       <span class="section-kicker">04 — Projects</span>
-      <h2>Eight projects</h2>
+      <h2>Nine projects</h2>
       <p>Click through to the code — every README documents what I found building it, bugs and all.</p>
     </div>
     <div class="filter-row" id="filter-row">
@@ -260,8 +260,20 @@
       <button class="filter-btn" data-filter="Computer Vision">Computer Vision</button>
       <button class="filter-btn" data-filter="Data & ML">Data & ML</button>
       <button class="filter-btn" data-filter="NLP & Search">NLP & Search</button>
+      <button class="filter-btn" data-filter="Web Apps">Web Apps</button>
     </div>
     <div class="project-grid" id="project-grid">
+
+      <a class="project-card" data-category="Web Apps" href="#demo-grandad">
+        <div class="project-card-head">
+          <span class="project-category">Web Apps</span>
+          <span class="project-metric muted">Try it live below ↓</span>
+        </div>
+        <h3 class="project-title">Grandad's Compass</h3>
+        <p class="project-desc">A family safety dashboard for my grandad, who has Alzheimer's: live map on real OpenStreetMap streets, safe-zone, fall and inactivity alerts.</p>
+        <div class="project-tech-pills"><span class="tech-pill">JavaScript</span><span class="tech-pill">SVG</span><span class="tech-pill">OpenStreetMap</span><span class="tech-pill">Vercel</span></div>
+        <div class="project-arrow">Try the live demo ↓</div>
+      </a>
 
       <a class="project-card" data-category="Data & ML" href="https://github.com/abinaya25138/cervical-cancer-prediction" target="_blank" rel="noopener">
         <div class="project-card-head">
@@ -359,8 +371,22 @@
   <section id="demos" class="wrap reveal">
     <div class="section-head">
       <span class="section-kicker">05 — Live demos</span>
-      <h2>Two of these, running right here</h2>
-      <p>Most ML demos on portfolio sites are screenshots. These two use the same retrieval logic from my repos, reimplemented in plain JavaScript so they run live in your browser.</p>
+      <h2>Three of these, running right here</h2>
+      <p>Most demos on portfolio sites are screenshots. These run live in your browser: a full app I built for my family, and two search demos that reuse the retrieval logic from my repos in plain JavaScript.</p>
+    </div>
+
+    <div class="demo-panel wide" id="demo-grandad" style="margin-bottom:24px;">
+      <div class="demo-intro">
+        <div>
+          <div class="demo-label"><span class="live-pill"></span>Live — Grandad's Compass</div>
+          <h3>Where is Grandad, and is he safe?</h3>
+          <p>My grandad has Alzheimer's, and we lost him once. I built this so the family can see where he is around Sahakarnagar, Bengaluru, and get an alert if he leaves a safe zone around home, has a possible fall, or stops moving while he's out. The streets, shops, temples and bus stops are real OpenStreetMap data, and routes follow the actual roads. This demo runs a simulated walk: try "Wanders off" or "Has a fall" under the map.</p>
+        </div>
+        <div class="demo-actions">
+          <a class="btn btn-primary" href="https://grandads-compass.vercel.app" target="_blank" rel="noopener">Open full screen ↗</a>
+        </div>
+      </div>
+      <iframe class="demo-frame" src="https://grandads-compass.vercel.app" title="Grandad's Compass live demo" loading="lazy"></iframe>
     </div>
 
     <div class="demo-panel" style="margin-bottom:24px;">

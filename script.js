@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // ---------------------------------------------------------------------------
 // Stats bar count-up
 // ---------------------------------------------------------------------------
-const STAT_TARGETS = { projects: 8, accuracy: 98.2, clients: 200, years: 14 };
+const STAT_TARGETS = { projects: 9, accuracy: 98.2, clients: 200, years: 14 };
 let countStarted = false;
 
 function startCountUp() {
