@@ -28,7 +28,7 @@ section, header{scroll-margin-top:84px;}
 .stat-num{font-family:'Space Grotesk'; font-size:clamp(32px,4.5vw,46px); font-weight:600; color:var(--accent); letter-spacing:-0.02em; font-variant-numeric:tabular-nums;}
 .stat-label{margin-top:6px; font-family:'IBM Plex Mono'; font-size:12.5px; color:var(--text-faint);}
 
-/* journey map — styled as a pipeline/flow diagram */
+/* journey map: styled as a pipeline/flow diagram */
 .journey-intro{font-family:'IBM Plex Mono'; font-size:13.5px; color:var(--text-faint); margin-bottom:6px;}
 .journey-map{position:relative; width:100%; aspect-ratio:1000/260; margin-top:14px;}
 .journey-mobile-list{display:none;}

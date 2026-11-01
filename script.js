@@ -139,7 +139,7 @@ filterButtons.forEach((btn) => {
 });
 
 // ---------------------------------------------------------------------------
-// Live demo 1 — NLTK-style retrieval chatbot
+// Live demo 1: NLTK-style retrieval chatbot
 // ---------------------------------------------------------------------------
 const CORPUS = [
   "natural language processing is a field of artificial intelligence focused on enabling computers to understand interpret and generate human language",
@@ -172,7 +172,7 @@ function computeReply(input) {
     if (score > bestScore) { bestScore = score; best = sentence; }
   }
   if (bestScore === 0 || !best) {
-    return "I'm not sure about that — try asking about tokenization, TF-IDF, chatbots, or NLP.";
+    return "I'm not sure about that. Try asking about tokenization, TF-IDF, chatbots, or NLP.";
   }
   return best;
 }
@@ -201,7 +201,7 @@ if (chatSend) chatSend.addEventListener('click', sendChat);
 if (chatInput) chatInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendChat(); });
 
 // ---------------------------------------------------------------------------
-// Live demo 2 — Jaccard similarity fuzzy search
+// Live demo 2: Jaccard similarity fuzzy search
 // ---------------------------------------------------------------------------
 const TAGS = [
   "Conveyor Belt Motor Temperature",
