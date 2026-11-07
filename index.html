@@ -278,11 +278,11 @@
       <a class="project-card" data-category="Data & ML" href="https://github.com/abinaya25138/cervical-cancer-prediction" target="_blank" rel="noopener">
         <div class="project-card-head">
           <span class="project-category">Data & ML</span>
-          <span class="project-metric">86% acc · AUC 0.66</span>
+          <span class="project-metric">CV AUC 0.61 vs 0.50 chance</span>
         </div>
         <h3 class="project-title">Cervical Cancer Risk Prediction</h3>
-        <p class="project-desc">XGBoost vs. DNN on real patient data, 3-reader majority-vote ground truth, SHAP interpretability.</p>
-        <div class="project-tech-pills"><span class="tech-pill">XGBoost</span><span class="tech-pill">TensorFlow</span><span class="tech-pill">SHAP</span></div>
+        <p class="project-desc">Predicting biopsy results from risk factors: XGBoost vs. a neural network, 50-fold repeated cross-validation against a chance control, SHAP interpretability.</p>
+        <div class="project-tech-pills"><span class="tech-pill">XGBoost</span><span class="tech-pill">scikit-learn</span><span class="tech-pill">SHAP</span></div>
         <div class="project-arrow">View repo →</div>
       </a>
 
@@ -461,18 +461,18 @@
 
       <div class="result-card">
         <h4>Cervical cancer: SHAP feature importance</h4>
-        <div class="result-sub">XGBoost, mean |SHAP value| on held-out test set</div>
+        <div class="result-sub">XGBoost, mean |SHAP value| for predicting a positive biopsy</div>
         <svg viewBox="0 0 460 212" style="width:100%; height:auto;">
-          <text x="0" y="14" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Hormonal Contraceptives (yrs)</text>
+          <text x="0" y="14" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">First sexual intercourse (age)</text>
           <rect x="0" y="20" width="400" height="18" rx="4" fill="#B8456C"/>
-          <text x="0" y="55" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Num. of pregnancies</text>
-          <rect x="0" y="61" width="347" height="18" rx="4" fill="#B8456C" opacity="0.85"/>
-          <text x="0" y="96" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">First sexual intercourse (age)</text>
-          <rect x="0" y="102" width="344" height="18" rx="4" fill="#B8456C" opacity="0.72"/>
-          <text x="0" y="137" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Age</text>
-          <rect x="0" y="143" width="311" height="18" rx="4" fill="#B8456C" opacity="0.6"/>
-          <text x="0" y="178" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Number of sexual partners</text>
-          <rect x="0" y="184" width="217" height="18" rx="4" fill="#B8456C" opacity="0.45"/>
+          <text x="0" y="55" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Hormonal Contraceptives (yrs)</text>
+          <rect x="0" y="61" width="323" height="18" rx="4" fill="#B8456C" opacity="0.85"/>
+          <text x="0" y="96" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Age</text>
+          <rect x="0" y="102" width="311" height="18" rx="4" fill="#B8456C" opacity="0.72"/>
+          <text x="0" y="137" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Num. of pregnancies</text>
+          <rect x="0" y="143" width="236" height="18" rx="4" fill="#B8456C" opacity="0.6"/>
+          <text x="0" y="178" fill="#7C6E78" font-size="12" font-family="IBM Plex Mono">Any STD history</text>
+          <rect x="0" y="184" width="169" height="18" rx="4" fill="#B8456C" opacity="0.45"/>
         </svg>
       </div>
 
